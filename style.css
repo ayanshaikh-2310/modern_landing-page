@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+
+}
+
+
+.main {
+    width: 100%;
+    /* height: 100vh; */
+    /* background-color: rgba(8, 4, 4, 0); */
+}
+
+.top {
+    pointer-events: none;
+    width: 100%;
+    /* height: 100vh; */
+    /* background-color: rgba(9, 8, 8, 0.712); */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.back .img1 {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.back {
+    width: 100%;
+    /* height: 100vh; */
+}
+
+.workingarea {
+    position: relative;
+    margin: 0 auto;
+    width: 80%;
+    height: 100vh;
+    max-width: 1920px;
+    /* vese to hum puri width lena chaatey hai lekin but agar  koi device 1920px se zyada hai tp hum uski full widthsirf 1920 hi lenge */
+    /* background-color: rgb(244, 151, 13); */
+    /* border: 2px solid rgb(12, 12, 1); */
+}
+
+.nav {
+    margin-top: 10px;
+    pointer-events: all;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    /* background-color: rgb(101, 129, 129); */
+}
+
+.navleft img {
+    height: 60px;
+    /* width: 70px; */
+    /* background-color: aquamarine; */
+}
+
+.navleft,
+.navright {
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-start; */
+    gap: 60px;
+    /* background-color: blue; */
+}
+
+.nav a {
+    padding: 20px 0;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+
+}
+
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* height: 55px; */
+    /* background-color: aquamarine; */
+}
+
+
+.heroleft {
+    min-width: 40%;
+    /* height: 50px; */
+    /* background-color: cornflowerblue; */
+}
+
+.heroleft .elem {
+    position: relative;
+    overflow: hidden;
+    height: 20vh;
+    /* background-color: crimson; */
+}
+
+.heroleft .elem h1:nth-child(1) {
+    top: 0;
+    /* color: aqua; */
+    /* background-color: black; */
+}
+
+.heroleft .elem h1 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-family: "kajiro";
+    color: #fff;
+    line-height: 0.9;
+    font-size: 11vw;
+    font-weight: 100;
+
+}
+
+
+
+.heroleft button {
+    pointer-events: all;
+    /* pointer event humko allow karta hai ki konsi chhezz ko hum cllick karke select kar sakte hai if none hoga then select nhi hog orr if all hoga then select hojaeyga */
+    padding: .6vw 2.5vw;
+    font-size: 2.5vw;
+    font-family: "kajiro";
+    margin-top: 2vw;
+    letter-spacing: 5px;
+
+}
+
+.heroright {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: #fff;
+    width: 20%;
+    height: 70vh;
+    /* background-color: brown; */
+}
+
+.heroright p {
+    font-size: 14px;
+    font-weight: 300;
+    text-align: right;
+    /* margin-bottom: 50px; */
+
+}
+
+.heroright .imagediv {
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    background-image: url(princ.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.heroright #extra {
+    /* color: blue; */
+    margin-top: 60px;
+}
